@@ -24,7 +24,7 @@ a {
 
 .home,
 .about,
-.contact {
+.portfolio {
   display: none;
 }
 
@@ -103,7 +103,7 @@ a {
   transform: translateX(-50%);
 }
 
-.about {
+.about, .contact {
   color: #666;
 }
 
@@ -131,8 +131,8 @@ h3 {
 }
 
 .about-image {
-  display: none;
-  background: grey;
+  /* display: none; */
+  background: #222;
 }
 
 h2 {
@@ -218,4 +218,21 @@ h2 {
 
 .github-web:hover {
   color: #4d88ff;
+}
+
+.contact a {
+  color: #666;
+}
+
+.contact a:hover {
+  color: #222;
+}
+
+.contact-form {
+  background: lightgrey;
+  color: #222;
+}
+
+.contact-form input, .contact-form textarea {
+  border: solid black 1px;
 }
