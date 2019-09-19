@@ -22,9 +22,9 @@ a {
   height: 100%;
 }
 
-.home,
 .about,
-.portfolio {
+.portfolio,
+.contact {
   display: none;
 }
 
