@@ -230,9 +230,9 @@ h2 {
 
 .contact-form {
   background: lightgrey;
-  color: #222;
+  color: #333;
 }
 
 .contact-form input, .contact-form textarea {
-  border: solid black 1px;
+  border: solid #666 1px;
 }
