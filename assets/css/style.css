@@ -1,0 +1,221 @@
+html,
+body,
+main {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home,
+#about,
+#portfolio,
+#contact,
+.side-bar {
+  padding-top: 48px;
+  height: 100%;
+}
+
+.about-row,
+.contact-row {
+  height: 100%;
+}
+
+.home,
+.about,
+.contact {
+  display: none;
+}
+
+.row {
+  margin: 0;
+}
+
+.top-bar {
+  position: relative;
+  background-color: #222;
+  line-height: 0;
+  border-bottom: solid #444 1px;
+}
+
+.burger {
+  display: inline-block;
+  padding: 6px 18px;
+  border-right: solid #444 1px;
+}
+
+.burger-bar {
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 6px;
+  display: block;
+}
+
+.top-bar-logo {
+  color: white;
+  position: absolute;
+  left: 100px;
+  top: 50%;
+}
+
+.side-bar {
+  display: none;
+  background: #222;
+  width: 85px;
+  height: 100%;
+  position: fixed;
+  left: 0%;
+}
+
+/* .logo-link {
+  background: blue;
+  padding: 20px;
+  border-bottom: solid #444 1px;
+  color: white;
+  line-height: 1.3;
+} */
+
+.font-icons {
+  padding: 30px;
+  font-size: 25px;
+  color: #444;
+  border-bottom: solid #444 1px;
+}
+
+.font-icons:hover,
+.font-icon-active {
+  color: white;
+}
+
+.home {
+  background: url("../images/main-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-content {
+  position: relative;
+  left: 50%;
+  bottom: -70%;
+  transform: translateX(-50%);
+}
+
+.about {
+  color: #666;
+}
+
+.about-table li:first-child {
+  border-top: solid #222 1px;
+}
+
+.about-table li {
+  border-bottom: solid #222 1px;
+  padding: 10px 0;
+}
+
+.about-table li p {
+  margin: 0;
+}
+
+h3,
+.about-table li p {
+  font-size: 18px;
+}
+
+h3 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.about-image {
+  display: none;
+  background: grey;
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 0;
+}
+
+.h2-bar {
+  height: 3px;
+  width: 90px;
+  background: #ff4d4d;
+}
+
+.about-contact-btn,
+.resume-btn {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: solid #222 3px;
+}
+
+.about-contact-btn {
+  color: white;
+  background: #222;
+}
+
+.resume-btn {
+  color: #222;
+}
+
+.card {
+  box-shadow: 1px 1px 10px #999;
+}
+
+.card-title {
+  margin-bottom: 0;
+}
+
+.card-body {
+  border-top: solid #bfbfbf 1px;
+  padding: 10px;
+}
+
+.card-img-top {
+  height: 216px;
+}
+
+.lower-brightness {
+  filter: brightness(20%);
+}
+
+.project-card-hover {
+  box-shadow: 1px 1px 10px black;
+}
+
+.project-btns {
+  display: none;
+}
+
+.deployed-web,
+.github-web {
+  text-align: center;
+  position: absolute;
+  background: white;
+  color: black;
+  padding: 5px 0;
+  width: 130px;
+  bottom: 20%;
+}
+
+.deployed-web {
+  border: solid #ff4d4d 3px;
+  left: 5%;
+}
+
+.deployed-web:hover {
+  color: #ff4d4d;
+}
+
+.github-web {
+  border: solid #4d88ff 3px;
+  right: 5%;
+}
+
+.github-web:hover {
+  color: #4d88ff;
+}
