@@ -69,14 +69,6 @@ a {
   left: 0%;
 }
 
-/* .logo-link {
-  background: blue;
-  padding: 20px;
-  border-bottom: solid #444 1px;
-  color: white;
-  line-height: 1.3;
-} */
-
 .font-icons {
   padding: 30px;
   font-size: 25px;
@@ -253,8 +245,16 @@ h2 {
   main {
     padding-left: 85px;
   }
-
   .side-bar {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-image {
+    height: 450px;
+  }
+  .resume-btn {
+    display: inline-block;
   }
 }
