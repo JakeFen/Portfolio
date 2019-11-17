@@ -103,7 +103,8 @@ a {
   transform: translateX(-50%);
 }
 
-.about, .contact {
+.about,
+.contact {
   color: #666;
 }
 
@@ -130,9 +131,19 @@ h3 {
   line-height: 1.5;
 }
 
-.about-image {
-  /* display: none; */
+.about-image-container {
   background: #222;
+}
+
+.about-image {
+  height: 700px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: brightness(90%);
+  border-radius: 3px;
 }
 
 h2 {
@@ -233,7 +244,8 @@ h2 {
   color: #333;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   border: solid #666 1px;
 }
 
