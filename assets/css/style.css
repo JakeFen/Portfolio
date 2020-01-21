@@ -168,19 +168,11 @@ a:hover {
   padding: 10px 0;
 }
 
-.about-table li p {
-  margin: 0;
-}
-
 h3,
 .about-table li p {
   font-size: 18px;
 }
 
-h3 {
-  margin: 0;
-  line-height: 1.5;
-}
 
 .about-image {
   box-shadow: 0 0 20px #555;
@@ -284,10 +276,12 @@ h5 {
   color: white;
   background: #222;
 }
+
 .image-container {
   width: 90%;
-  margin: 0 auto;
+  margin: 15px auto;
 }
+
 .card-img-top {
   border-radius: 3px;
   box-shadow: 0 0 10px black;
@@ -358,6 +352,7 @@ footer {
 
 @media screen and (min-width: 950px) {
   .image-container {
+    margin: 0 auto;
     flex: 5 2;
   }
 
@@ -387,9 +382,6 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .about-image {
-    width: 100%;
-  }
   .resume-btn {
     display: inline-block;
   }
