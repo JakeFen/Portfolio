@@ -237,26 +237,46 @@ h2 {
 }
 
 .card-container {
-  margin: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.right-card-content,
+.left-card-content {
+  flex-direction: column;
 }
 
 .card {
   box-shadow: 1px 1px 10px #999;
 }
 
-.card-body {
-  border-top: solid #bfbfbf 1px;
-  padding: 10px;
+.right-card-body,
+.left-card-body {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+  flex: 6 2;
 }
 
-.learn-more-btn {
-  color: #222;
-  margin-bottom: 5px;
-  font-size: 15px;
-  padding: 10px 20px;
-  border: solid #222 3px;
-  display: block;
-  margin: 0 auto;
+.right-card-body {
+  border-right: solid #999 1px;
+}
+
+.left-card-body {
+  border-left: solid #999 1px;
+}
+
+h5 {
+  font-size: 24px;
+  padding-bottom: 10px;
+  border-bottom: solid #999 1px;
+}
+
+.span-content {
+  font-weight: 700;
 }
 
 .learn-more-btn:hover {
@@ -264,36 +284,31 @@ h2 {
   color: white;
   background: #222;
 }
-
+.image-container {
+  width: 90%;
+  margin: 0 auto;
+}
 .card-img-top {
+  border-radius: 3px;
+  box-shadow: 0 0 10px black;
+  max-width: 100%;
   width: 100%;
 }
 
-.lower-brightness {
-  filter: brightness(20%);
-}
-
-.project-card-hover {
-  box-shadow: 1px 1px 10px black;
-}
-
-.project-btns {
-  display: none;
+.project-btns a {
+  margin: 0 5px;
 }
 
 .deployed-web,
 .github-web {
-  text-align: center;
-  position: absolute;
   background: white;
   color: black;
-  padding: 5px 0;
-  width: 130px;
+  padding: 5px 10px;
   bottom: 20%;
 }
 
 .deployed-web {
-  border: solid #ff4d4d 3px;
+  border: solid #ff4d4d 2px;
   left: 5%;
 }
 
@@ -302,12 +317,15 @@ h2 {
 }
 
 .github-web {
-  border: solid #4d88ff 3px;
-  right: 5%;
+  border: solid #4d88ff 2px;
 }
 
 .github-web:hover {
   color: #4d88ff;
+}
+
+.modal-title {
+  margin: 0 auto;
 }
 
 .contact a {
@@ -338,10 +356,17 @@ footer {
   width: 250px;
 }
 
-@media only screen and (min-width: 343px) {
-  .card-img-top {
-    width: 341px;
-    height: 216px;
+@media screen and (min-width: 950px) {
+  .image-container {
+    flex: 5 2;
+  }
+
+  .right-card-content {
+    flex-direction: row;
+  }
+
+  .left-card-content {
+    flex-direction: row-reverse;
   }
 }
 
@@ -374,7 +399,7 @@ footer {
   .about-row,
   .contact-row,
   .portfolio-row {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
   }
 }
