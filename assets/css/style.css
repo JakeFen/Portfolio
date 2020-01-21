@@ -45,7 +45,7 @@ a:hover {
 }
 
 .home {
-  background: url("../images/jesus-kiteque-wn-KYaHwcis-unsplash.jpg");
+  background: url("../images/homepage-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -244,13 +244,25 @@ h2 {
   box-shadow: 1px 1px 10px #999;
 }
 
-.card-title {
-  margin-bottom: 0;
-}
-
 .card-body {
   border-top: solid #bfbfbf 1px;
   padding: 10px;
+}
+
+.learn-more-btn {
+  color: #222;
+  margin-bottom: 5px;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: solid #222 3px;
+  display: block;
+  margin: 0 auto;
+}
+
+.learn-more-btn:hover {
+  cursor: pointer;
+  color: white;
+  background: #222;
 }
 
 .card-img-top {
@@ -359,7 +371,9 @@ footer {
 }
 
 @media only screen and (min-width: 1300px) {
-  .about-row, .contact-row, .portfolio-row {
+  .about-row,
+  .contact-row,
+  .portfolio-row {
     width: 80%;
     margin: 0 auto;
   }
