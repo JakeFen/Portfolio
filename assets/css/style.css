@@ -2,7 +2,7 @@ a {
   text-decoration: none;
 }
 
-#home {
+.home {
   height: 100vh;
 }
 
@@ -75,6 +75,13 @@ a:hover {
 
 .nav-buttons a {
   padding: 20px;
+}
+
+.nav-anchor::before {
+  content: "";
+  display: block;
+  height: 51px;
+  margin: -51px 0 0;
 }
 
 .burger {
