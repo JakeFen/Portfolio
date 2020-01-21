@@ -1,9 +1,4 @@
 $(document).ready(function() {
-  $(".about-contact-btn").on("click", function() {
-    $(".about").hide();
-    $(".contact").show();
-  });
-
   const burger = document.querySelector(".burger-container");
   const navButtons = document.querySelector(".nav-buttons");
 
