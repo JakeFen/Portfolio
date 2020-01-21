@@ -8,11 +8,13 @@ a {
 
 .about-row,
 .contact-row {
-  min-height: calc(100vh - 51px);
+  color: #333;
+  /* background: lightgrey; */
+  padding: 20px 0;
 }
 
-.contact-row {
-  min-height: calc(100vh - 103px);
+.portfolio {
+  background: lightgrey;
 }
 
 .row {
@@ -131,7 +133,7 @@ a:hover {
 
 .fa-chevron-down {
   font-size: 50px;
-  animation: MoveUpDown .9s linear infinite;
+  animation: MoveUpDown 0.9s linear infinite;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -140,17 +142,13 @@ a:hover {
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     top: 60%;
   }
   50% {
     top: 61%;
   }
-}
-
-.about,
-.contact {
-  color: #666;
 }
 
 .about-table li:first-child {
@@ -176,12 +174,9 @@ h3 {
   line-height: 1.5;
 }
 
-.about-image-container {
-  background: #222;
-}
-
 .about-image {
-  height: 90vh;
+  box-shadow: 0 0 20px #555;
+  height: 450px;
   width: auto;
   display: block;
   margin: 0 auto;
@@ -303,11 +298,6 @@ h2 {
   color: #222;
 }
 
-.contact-form {
-  background: lightgrey;
-  color: #333;
-}
-
 .contact-form input,
 .contact-form textarea {
   border: solid #666 1px;
@@ -357,5 +347,12 @@ footer {
   }
   .resume-btn {
     display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .about-row, .contact-row, .portfolio-row {
+    width: 80%;
+    margin: 0 auto;
   }
 }
