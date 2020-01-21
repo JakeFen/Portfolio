@@ -1,31 +1,18 @@
-html,
-body,
-main {
-  height: 100%;
-}
-
 a {
   text-decoration: none;
 }
 
-#home,
-#about,
-#portfolio,
-#contact,
-.side-bar {
-  padding-top: 48px;
-  height: 100%;
+#home {
+  height: 100vh;
 }
 
 .about-row,
 .contact-row {
-  height: 100%;
+  min-height: calc(100vh - 51px);
 }
 
-.about,
-.portfolio,
-.contact {
-  display: none;
+.contact-row {
+  min-height: calc(100vh - 103px);
 }
 
 .row {
@@ -33,66 +20,132 @@ a {
 }
 
 .top-bar {
-  position: relative;
+  position: fixed;
+  top: 0;
   background-color: #222;
-  line-height: 0;
   border-bottom: solid #444 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.burger {
-  display: inline-block;
-  padding: 6px 18px;
-  border-right: solid #444 1px;
+a {
+  color: white;
 }
 
-.burger-bar {
-  width: 35px;
-  height: 4px;
-  background-color: white;
-  margin: 6px;
-  display: block;
+a:hover {
+  text-decoration: none;
 }
 
 .top-bar-logo {
-  color: white;
-  position: absolute;
-  left: 100px;
-  top: 50%;
-}
-
-.side-bar {
-  display: none;
-  background: #222;
-  width: 85px;
-  height: 100%;
-  position: fixed;
-  left: 0%;
-}
-
-.font-icons {
-  padding: 30px;
-  font-size: 25px;
-  color: #444;
-  border-bottom: solid #444 1px;
-}
-
-.font-icons:hover,
-.font-icon-active {
-  color: white;
+  padding-left: 13px;
 }
 
 .home {
-  background: url("../images/main-background.jpg");
+  background: url("../images/jesus-kiteque-wn-KYaHwcis-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .home-content {
   position: relative;
   left: 50%;
-  bottom: -70%;
-  transform: translateX(-50%);
+  bottom: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-buttons {
+  display: none;
+}
+.active-nav-buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #222;
+  width: 60%;
+  height: 100vh;
+  right: 0;
+  top: 51px;
+  color: white;
+}
+
+.nav-buttons a {
+  padding: 20px;
+}
+
+.burger {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 2px;
+  background: white;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.burger:before {
+  top: -9px;
+}
+
+.burger:after {
+  top: 9px;
+}
+.burger-container {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding-right: 13px;
+}
+
+.burger-main:before,
+.burger-main:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.burger-container.active-burger .burger-main {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.burger-container.active-burger .burger-main:before {
+  top: 0;
+  transform: rotate(135deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.burger-container.active-burger .burger-main:after {
+  top: 0;
+  transform: rotate(225deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fa-chevron-down {
+  font-size: 50px;
+  animation: MoveUpDown .9s linear infinite;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  color: black;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 60%;
+  }
+  50% {
+    top: 61%;
+  }
 }
 
 .about,
@@ -128,7 +181,8 @@ h3 {
 }
 
 .about-image {
-  height: 700px;
+  height: 90vh;
+  width: auto;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -136,6 +190,10 @@ h3 {
   transform: translateY(-50%);
   filter: brightness(90%);
   border-radius: 3px;
+}
+
+.about-header {
+  margin: 24px 0;
 }
 
 h2 {
@@ -149,8 +207,14 @@ h2 {
   background: #ff4d4d;
 }
 
+.about-btns {
+  margin-bottom: 10px;
+}
+
 .about-contact-btn,
 .resume-btn {
+  display: inline-block;
+  margin-bottom: 5px;
   font-size: 15px;
   padding: 10px 20px;
   border: solid #222 3px;
@@ -163,6 +227,14 @@ h2 {
 
 .resume-btn {
   color: #222;
+}
+
+.project-header {
+  margin: 24px 0 19px;
+}
+
+.card-container {
+  margin: 15px;
 }
 
 .card {
@@ -179,7 +251,7 @@ h2 {
 }
 
 .card-img-top {
-  height: 216px;
+  width: 100%;
 }
 
 .lower-brightness {
@@ -241,18 +313,47 @@ h2 {
   border: solid #666 1px;
 }
 
-@media only screen and (min-width: 768px) {
-  main {
-    padding-left: 85px;
+footer {
+  background: #222;
+  padding: 5px 0;
+  width: 100%;
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 35px;
+  margin: 0 auto;
+  width: 250px;
+}
+
+@media only screen and (min-width: 343px) {
+  .card-img-top {
+    width: 341px;
+    height: 216px;
   }
-  .side-bar {
-    display: block;
+}
+
+@media only screen and (min-width: 576px) {
+  .nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+    align-items: center;
+    margin: 0;
+  }
+  .nav-buttons a {
+    padding: 0;
+  }
+  .top-bar {
+    padding: 13px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .about-image {
-    height: 450px;
+    width: 100%;
   }
   .resume-btn {
     display: inline-block;

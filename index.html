@@ -7,83 +7,48 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
       crossorigin="anonymous"
     />
     <script src="https://kit.fontawesome.com/287b5cc75d.js"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+    <title>Jacob Fenwick</title>
   </head>
   <body>
     <header>
       <div class="top-bar position-fixed fixed-top">
-        <div class="burger">
-          <span class="burger-bar"></span>
-          <span class="burger-bar"></span>
-          <span class="burger-bar"></span>
-        </div>
         <a href="" class="top-bar-logo text-decoration-none">JACOB FENWICK</a>
-      </div>
-      <div class="side-bar float-left">
-        <nav>
-          <ul>
-            <li>
-              <a href="#home" class="nav-icon text-decoration-none home-btn">
-                <i
-                  class="fas fa-home font-icons d-flex justify-content-center home-btn"
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a href="#about" class="nav-icon text-decoration-none about-btn">
-                <i
-                  class="fas fa-user font-icons d-flex justify-content-center about-btn"
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#portfolio"
-                class="nav-icon text-decoration-none portfolio-btn"
-              >
-                <i
-                  class="fas fa-folder-open font-icons d-flex justify-content-center portfolio-btn"
-                ></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="nav-icon text-decoration-none contact-btn"
-              >
-                <i
-                  class="fas fa-phone-alt font-icons d-flex justify-content-center contact-btn"
-                ></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="burger-container hidden-sm-up">
+          <div class="burger burger-main"></div>
+        </div>
+        <ul class="nav-buttons">
+          <a href="#"><li>HOME</li></a>
+          <a href="#"><li>ABOUT</li></a>
+          <a href="#"><li>PROJECTS</li></a>
+          <a href="#"><li>CONTACT</li></a>
+        </ul>
       </div>
     </header>
 
     <main class="main">
       <section class="home text-center" id="home">
         <div class="home-content">
-          <h1><span>Hi, I am </span>Jacob Fenwick</h1>
-          <p>I am a Full-Stack Web Developer!</p>
+          <h1><span>Hi, I'm </span>Jacob Fenwick</h1>
+          <p>I'm a Full-Stack Web Developer!</p>
         </div>
+        <a href="#about"><i class="fas fa-chevron-down"></i></a>
       </section>
 
       <section class="about" id="about">
         <div class="about-row row">
           <div class="col-md-6">
-            <div class="p-4">
+            <div class="about-header">
               <h2>ABOUT ME</h2>
               <div class="h2-bar"></div>
             </div>
             <!-- bar below -->
-            <p class="about-life-text p-4">
+            <p class="about-life-text">
               My name is Jacob Fenwick. I'm from Castalia, Ohio. I moved to
               Charlotte for career opportunities and professional growth. I
               currently work as a jewelry salesman. I have two girls in my life,
@@ -92,7 +57,7 @@
               a little more about me...
             </p>
 
-            <ul class="about-table m-4">
+            <ul class="about-table">
               <li class="clearfix">
                 <h3 class="float-left">Hobbies</h3>
                 <p class="float-right">Gaming, Drawing, Coding</p>
@@ -106,14 +71,14 @@
                 <p class="float-right">I collect socks</p>
               </li>
             </ul>
-            <p class="m-4">
+            <p>
               I first considered web development as a viable career path when I
               was in high school. I really enjoyed playing video games and
               decided to create my own. As I got older, I learned more about web
               development and I fell in love with it.
             </p>
 
-            <div class="about-btns m-4 ">
+            <div class="about-btns">
               <a href="#contact" class="about-contact-btn text-decoration-none"
                 >HIRE ME</a
               >
@@ -131,16 +96,16 @@
       </section>
 
       <section class="portfolio" id="portfolio">
-        <div class="row p-4">
+        <div class="row">
           <div class="col-md-12">
-            <div>
-              <h2>PORTFOLIO</h2>
+            <div class="project-header">
+              <h2>PROJECTS</h2>
               <div class="h2-bar"></div>
             </div>
-            <ul class="d-flex justify-content-center flex-wrap p-4">
-              <li>
+            <ul class="d-flex justify-content-center flex-wrap">
+              <li class="card-container">
                 <div class="text-decoration-none">
-                  <div class="card m-3" style="width: 343px;">
+                  <div class="card">
                     <img
                       src="assets/images/hangman.png"
                       class="card-img-top"
@@ -168,9 +133,9 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="card-container">
                 <div class="text-decoration-none">
-                  <div class="card m-3" style="width: 343px;">
+                  <div class="card">
                     <img
                       src="assets/images/trivia.png"
                       class="card-img-top"
@@ -200,9 +165,9 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="card-container">
                 <div class="text-decoration-none">
-                  <div class="card m-3" style="width: 343px;">
+                  <div class="card">
                     <img
                       src="assets/images/crystal-collector.png"
                       class="card-img-top"
@@ -230,9 +195,9 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="card-container">
                 <div class="text-decoration-none">
-                  <div class="card m-3" style="width: 343px;">
+                  <div class="card">
                     <img
                       src="assets/images/giphy.png"
                       class="card-img-top"
@@ -260,9 +225,9 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="card-container">
                 <div class="text-decoration-none">
-                  <div class="card m-3" style="width: 343px;">
+                  <div class="card">
                     <img
                       src="assets/images/trail-timer.png"
                       class="card-img-top"
@@ -290,9 +255,9 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="card-container">
                 <div class="text-decoration-none">
-                  <div class="card m-3" style="width: 343px;">
+                  <div class="card">
                     <img
                       src="assets/images/findaband.png"
                       class="card-img-top"
@@ -320,9 +285,9 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="card-container">
                 <div class="text-decoration-none">
-                  <div class="card m-3" style="width: 343px;">
+                  <div class="card">
                     <img
                       src="assets/images/eat-da-burger.png"
                       class="card-img-top"
@@ -350,9 +315,9 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="card-container">
                 <div class="text-decoration-none">
-                  <div class="card m-3" style="width: 343px;">
+                  <div class="card">
                     <img
                       src="assets/images/uncctimetracker.png"
                       class="card-img-top"
@@ -481,15 +446,19 @@
       </section>
     </main>
 
-    <!-- <footer>
+    <footer>
       <ul class="social-media">
-        <li>Facebook</li>
-        <li>LinkedIn</li>
-        <li>GitHub</li>
-        <li>Email</li>
+        <li>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-github-square"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fas fa-envelope-open-text"></i></a>
+        </li>
       </ul>
-      <p class="copyright">2019 Jacob Fenwick</p>
-    </footer> -->
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/scripts/script.js"></script>
