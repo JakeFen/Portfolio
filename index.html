@@ -553,11 +553,12 @@
           </div>
 
           <div class="contact-form col-md-6">
-            <form action="assets/inc/index.php" method="post" class="m-4 mt-5">
+            <form action="https://formspree.io/mqkpnoon" method="post" class="m-4 mt-5">
               <div class="form-group">
                 <label for="formGroupExampleInput">Full name:</label>
                 <input
                   type="text"
+                  name="name"
                   class="form-control"
                   id="formGroupExampleInput"
                   placeholder="Name"
@@ -567,7 +568,8 @@
               <div class="form-group">
                 <label for="formGroupExampleInput2">Email address:</label>
                 <input
-                  type="text"
+                  type="email"
+                  name="email"
                   class="form-control"
                   id="formGroupExampleInput2"
                   placeholder="Email"
@@ -578,6 +580,7 @@
                 <label for="formGroupExampleInput3">Phone Number:</label>
                 <input
                   type="number"
+                  name="number"
                   class="form-control"
                   id="formGroupExampleInput3"
                   placeholder="123-456-7890"
@@ -588,12 +591,13 @@
                 <label for="exampleFormControlTextarea1">Message:</label>
                 <textarea
                   class="form-control"
+                  name="message"
                   id="exampleFormControlTextarea1"
                   rows="3"
                   placeholder="Message"
                 ></textarea>
               </div>
-              <button type="submit" name="submit" class="submit-button about-contact-btn btn btn-dark">
+              <button type="submit" name="submit" value="submit" class="submit-button about-contact-btn btn btn-dark">
                 SEND MESSAGE
               </button>
             </form>
